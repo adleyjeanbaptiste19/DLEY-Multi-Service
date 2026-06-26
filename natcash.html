@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paté - Dley Multi-Service</title>
+    <title>NatCash - Dley Multi-Service</title>
 
     <style>
         *{
             margin:0;
             padding:0;
             box-sizing:border-box;
-            font-family:Arial, sans-serif;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         body{
-            background:#f8f9fa;
+            background:#f4f8fb;
+            color:#333;
         }
 
         header{
-            background:linear-gradient(135deg,#ff8c00,#ffb347);
-            color:white;
+            background:linear-gradient(135deg,#0066cc,#0099ff);
+            color:#fff;
             text-align:center;
             padding:50px 20px;
         }
@@ -31,22 +32,22 @@
 
         .container{
             width:90%;
-            max-width:1200px;
+            max-width:1100px;
             margin:40px auto;
         }
 
-        .cards{
+        .services{
             display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
             gap:25px;
         }
 
         .card{
-            background:white;
-            padding:25px;
+            background:#fff;
+            padding:30px;
             border-radius:15px;
             text-align:center;
-            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            box-shadow:0 4px 12px rgba(0,0,0,.1);
             transition:0.3s;
         }
 
@@ -59,34 +60,33 @@
             margin-bottom:15px;
         }
 
-        .card h2{
-            color:#d35400;
+        h2{
+            color:#0066cc;
             margin-bottom:10px;
         }
 
-        .card p{
-            color:#555;
+        p{
             margin-bottom:20px;
+            line-height:1.6;
         }
 
         .btn{
             display:inline-block;
+            padding:10px 22px;
+            background:#0066cc;
+            color:#fff;
             text-decoration:none;
-            background:#d35400;
-            color:white;
-            padding:10px 20px;
-            border-radius:25px;
-            transition:0.3s;
+            border-radius:30px;
         }
 
         .btn:hover{
-            background:#a84300;
+            background:#004f9e;
         }
 
         footer{
             margin-top:40px;
-            background:#222;
-            color:white;
+            background:#0f172a;
+            color:#fff;
             text-align:center;
             padding:20px;
         }
@@ -106,39 +106,40 @@
         <li><a href="contact.html">Kontak</a></li>
     </ul>
 </nav>
-    <h1>🥟 Paté Dley Multi-Service</h1>
-    <p>Bon gou, fre epi prepare ak swen.</p>
+    <h1>💳 NatCash</h1>
+    <p>Dley Multi-Service - Sèvis depo ak retrè rapid, serye ak sekirize.</p>
 </header>
 
 <div class="container">
-    <div class="cards">
+
+    <div class="services">
 
         <div class="card">
-            <div class="icon">🐟</div>
-            <h2>Paté Aran</h2>
-            <p>Paté ak aran byen prepare, ideyal pou dejene oswa kolasyon.</p>
-            <a href="#" class="btn">Kòmande</a>
+            <div class="icon">📥</div>
+            <h2>Depo NatCash</h2>
+            <p>
+                Nou ede w fè depo sou kont NatCash ou fasilman,
+                ak yon sèvis rapid ak pwofesyonèl.
+            </p>
+            <a href="#" class="btn">Fè Depo</a>
         </div>
 
         <div class="card">
-            <div class="icon">🍗</div>
-            <h2>Paté Vyann Poul</h2>
-            <p>Paté ki plen ak vyann poul sezonnen pou yon gou ekselan.</p>
-            <a href="#" class="btn">Kòmande</a>
-        </div>
-
-        <div class="card">
-            <div class="icon">🥚</div>
-            <h2>Paté Oeuf</h2>
-            <p>Paté ak ze, yon opsyon senp, nourisan ak bon gou.</p>
-            <a href="#" class="btn">Kòmande</a>
+            <div class="icon">📤</div>
+            <h2>Retrè NatCash</h2>
+            <p>
+                Vin retire lajan ou an sekirite ak yon sèvis
+                ki disponib pou satisfè bezwen w.
+            </p>
+            <a href="#" class="btn">Fè Retrè</a>
         </div>
 
     </div>
+
 </div>
 
 <footer>
-    <p>&copy; 2026 Dley Multi-Service - Paté bon kalite pou tout kliyan.</p>
+    <p>&copy; 2026 Dley Multi-Service | NatCash - Depo & Retrè</p>
 </footer>
 
 </body>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak - Dley Multi-Service</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:linear-gradient(135deg,#004aad,#00a2ff);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+}
+
+.contact-box{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-box h2{
+    color:#004aad;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.info{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.info p{
+    margin:15px 0;
+}
+
+form{
+    margin-top:25px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+.btn{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#003080;
+}
+
+/* Bouton WhatsApp */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.whatsapp:hover{
+    background:#1ebc57;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Akèy</a></li>
+        <li><a href="apropos.html">A Pwopo</a></li>
+        <li><a href="jus.html">Jus Natirèl</a></li>
+        <li><a href="pate.html">Paté</a></li>
+        <li><a href="materiel-electrique.html">Materyèl Elektrik</a></li>
+        <li><a href="maison-affaire.html">Maison d'Affaire</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+    </ul>
+</nav>
+    <h1>Kontakte Nou</h1>
+    <p>Dley Multi-Service toujou disponib pou ede w.</p>
+</header>
+
+<div class="container">
+
+    <div class="contact-box">
+
+        <h2>Enfòmasyon Kontak</h2>
+
+        <div class="info">
+            <p>📞 Telefòn: +509 32914678</p>
+            <p>📧 Email: adleyjeanbaptiste19@gmail.com</p>
+            <p>📍 Adrès: village jean mary</p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Non ou" required>
+
+            <input type="email" placeholder="adleyjeanbaptiste19@gmail.com">
+
+            <textarea placeholder="Ekri mesaj ou la..." required></textarea>
+
+            <button type="submit" class="btn">
+                Voye Mesaj
+            </button>
+        </form>
+
+    </div>
+
+</div>
+
+<!-- Bouton WhatsApp -->
+<a href="https://wa.me/50932914678"
+   target="_blank"
+   class="whatsapp">
+   💬 WhatsApp
+</a>
+
+<footer>
+    <p>&copy; 2026 Dley Multi-Service | Tout Dwa Rezève</p>
+</footer>
+
+</body>
+</html>

@@ -3,99 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dley Multi-Service</title>
-
+    <title>DLEY MULTI SERVICE - Byenveni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<base target="_blank">
 </head>
-
 <body>
 
-<header>
-
-    <div class="logo">
-        <img src="dley.png" alt="Dley Multi-Service Logo">
-    </div>
-
-    <button id="menu-toggle" class="menu-btn">
-        ☰
-    </button>
-
-    <nav id="nav-menu">
-
-        <button id="close-menu" class="close-btn">
-            ✕
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="logo-container">
+            <!-- RANPLASE LOGO SA A AK LOGO REYÈL OU A -->
+            <img src="Dley.png" alt="DLEY MULTI SERVICE Logo">
+            <div class="logo-text">DLEY <span>MULTI SERVICE</span></div>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
         </button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#akèy" onclick="closeMenu()">Akèy</a></li>
+                <li><a href="#sevis" onclick="closeMenu()">Sèvis</a></li>
+                <li><a href="#kontak" onclick="closeMenu()">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <a href="#">Akèy</a>
-        <a href="#services">Sèvis</a>
-        <a href="#contact">Kontak</a>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="akèy">
+        <div class="hero-content">
+            <h1>Byenveni nan <span class="highlight">DLEY MULTI SERVICE</span></h1>
+            <p class="hero-subtitle">Nou ofri yon pakèt sèvis pou reponn ak tout bezwen ou yo — rapid, pwofesyonèl ak konfyans!</p>
+            <a href="#sevis" class="btn-hero">
+                <i class="fas fa-door-open"></i> Antre nan Sèvis Nou Yo
+            </a>
+        </div>
+        <div class="particle" style="width: 10px; height: 10px; top: 15%; left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="width: 6px; height: 6px; top: 55%; left: 85%; animation-delay: 3s;"></div>
+        <div class="particle" style="width: 8px; height: 8px; top: 35%; left: 50%; animation-delay: 6s;"></div>
+        <div class="particle" style="width: 5px; height: 5px; top: 75%; left: 25%; animation-delay: 9s;"></div>
+        <div class="particle" style="width: 12px; height: 12px; top: 25%; left: 75%; animation-delay: 12s;"></div>
+    </section>
 
-    </nav>
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="services-section" id="sevis">
+        <div class="section-header">
+            <h2 class="section-title"><i class="fas fa-store"></i> Sèvis Nou Ofri</h2>
+            <p class="section-subtitle">Klike sou "Antre" pou wè tout sa nou genyen pou ou</p>
+        </div>
 
-</header>
+        <!-- Bouton Antre -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <button class="btn-enter" id="btnEnter" onclick="showServices()">
+                <i class="fas fa-door-open"></i> Antre pou wè Sèvis yo
+            </button>
+        </div>
 
-<section class="hero">
+        <!-- Kontni Sèvis (kache pa default) -->
+        <div class="services-content" id="servicesContent">
+            <div class="services-grid">
+                <!-- 1. NatCash -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>NatCash</h3>
+                    <p>Transfè lajan, retrait, depo ak peyman sou NatCash. Sekirite garanti, rapid ak san tèt grate.</p>
+                    <span class="service-price"><i class="fas fa-check-circle"></i> Disponib 24/7</span>
+                </div>
 
-    <h1>Byenvini nan Dley Multi-Service</h1>
+                <!-- 2. MonCash -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>MonCash</h3>
+                    <p>Sèvis MonCash — transfè, retrait, acha ak peyman mobil. Sèvis rapid ak konfyans.</p>
+                    <span class="service-price"><i class="fas fa-check-circle"></i> Disponib 24/7</span>
+                </div>
 
-    <p>
-        Nou ofri sèvis rapid, serye ak pwofesyonèl pou kliyan nou yo.
-    </p>
+                <!-- 3. Materyèl Elektrik -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-plug"></i></div>
+                    <h3>Materyèl Elektrik</h3>
+                    <p>Vann tout kalite materyèl elektrik: fil, priz, ampoul, entèptè, pano elektrik, ak plis ankò.</p>
+                    <span class="service-price"><i class="fas fa-tag"></i> Pri konpetitif</span>
+                </div>
 
-</section>
+                <!-- 4. Pwodwi Kosmetik -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Pwodwi Kosmetik</h3>
+                    <p>Byuti, swen po, cheve, parfum ak tout kalite pwodwi kosmetik kalite siperyè pou gason ak fanm.</p>
+                    <span class="service-price"><i class="fas fa-star"></i> Kalite garanti</span>
+                </div>
 
-<section id="services">
+                <!-- 5. Bwason Gazez -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-wine-bottle"></i></div>
+                    <h3>Bwason Gazez</h3>
+                    <p>Vann bwason gazez an gwo ak an detay: kola, ji, dlo, byè san alkòl ak lòt varyete.</p>
+                    <span class="service-price"><i class="fas fa-boxes"></i> An gwo & an detay</span>
+                </div>
 
-    <h2>Sèvis Nou Bay</h2>
+                <!-- 6. Chaj Telefòn -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-battery-full"></i></div>
+                    <h3>Chaj Telefòn</h3>
+                    <p>Chaj telefòn pou tout rezo: Digicel, Natcom ak tout lòt operatè. Rapid ak san pwoblèm.</p>
+                    <span class="service-price"><i class="fas fa-bolt"></i> Chaj rapid</span>
+                </div>
 
-    <div class="service-container">
+                <!-- 7. Pate -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bread-slice"></i></div>
+                    <h3>Pate</h3>
+                    <p>Vann pate fre ak delisye chak jou. Pate vyann, pate kodenn, pate legim ak lòt varyete.</p>
+                    <span class="service-price"><i class="fas fa-fire"></i> Fre chak jou</span>
+                </div>
 
-        <div class="card">NatCash</div>
+                <!-- 8. Ji Natirèl -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-lemon"></i></div>
+                    <h3>Ji Natirèl</h3>
+                    <p>Ji fre prepare ak fwi natirèl: ji sitwon, ji zoranj, ji mango, ji grenadya ak plis ankò.</p>
+                    <span class="service-price"><i class="fas fa-leaf"></i> 100% Natirèl</span>
+                </div>
+            </div>
 
-        <div class="card">MonCash</div>
+            <!-- Bouton Soti -->
+            <div style="text-align: center;">
+                <button class="btn-exit" id="btnExit" onclick="hideServices()">
+                    <i class="fas fa-door-closed"></i> Soti nan Sèvis yo
+                </button>
+            </div>
+        </div>
+    </section>
 
-        <div class="card">Peso & Dollar</div>
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact-section" id="kontak">
+        <div class="section-header">
+            <h2 class="section-title"><i class="fas fa-address-book"></i> Kontak Nou</h2>
+            <p class="section-subtitle">Nou la pou ou — kontakte nou nenpòt lè!</p>
+        </div>
 
-        <div class="card">Débloke Telefòn</div>
+        <div class="contact-grid">
+            <!-- WhatsApp -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                <h3>WhatsApp</h3>
+                <p>Klike sou bouton anba a pou kontakte nou dirèkteman sou WhatsApp. Nap reponn ou rapid!</p>
+                <!-- RANPLASE 50932914678 AK NIMEWO WHATSAPP OU A -->
+                <a href="https://wa.me/50932914678" class="contact-btn whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Klike pou WhatsApp
+                </a>
+            </div>
 
-        <div class="card">Materyèl Elektrik</div>
+            <!-- Email -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Imèl</h3>
+                <p>Voye yon imèl ban nou. Nap reponn ou nan pi piti tan posib.</p>
+                <!-- RANPLASE ADRÈS IMÈL LA AK SA OU VLE A -->
+                <a href="mailto:kontak@dleymultiservice.com" class="contact-btn email-btn">
+                    <i class="fas fa-paper-plane"></i> Voye Imèl
+                </a>
+            </div>
 
-        <div class="card">Bwason Gazez</div>
+            <!-- Adrès -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Adrès</h3>
+                <p>---<br>---</p>
+                <span style="color: var(--gold); font-size: 0.9rem;">
+                    <i class="fas fa-clock"></i> Louvri 7 jou sou 7
+                </span>
+            </div>
+        </div>
+    </section>
 
-        <div class="card">Ji Natirèl</div>
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p><i class="fas fa-heart" style="color: #e74c3c;"></i> &copy; 2026 <span class="brand">DLEY MULTI SERVICE</span> — Tout dwa rezève.</p>
+    </footer>
 
-        <div class="card">Bon Paté</div>
+    <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+    <!-- RANPLASE 509XXXXXXXX AK NIMEWO WHATSAPP OU A -->
+    <a href="https://wa.me/50932914678" class="whatsapp-float" target="_blank" title="Klike pou WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="whatsapp-tooltip">Klike pou WhatsApp</div>
 
-        <div class="card">Salad</div>
-
-        <div class="card">Chaje Telefòn</div>
-
-    </div>
-
-</section>
-
-<a href="https://wa.me/50932914678"
-class="whatsapp"
-target="_blank">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<footer id="contact">
-
-<h3>Dley Multi-Service</h3>
-
-<p>Nou toujou la pou sèvi ou.</p>
-
-<p>© 2026 Tout dwa rezève.</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="script.js"></script>
 
 </body>
 </html>
